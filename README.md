@@ -7,7 +7,7 @@ This is a Google Apps Script thing I threw together to handle extend closing req
 - **1st Sending**: Runs when a vessel’s closing time hits, sending emails for late stuff.
 - **Follow-Ups**: Lets you send more requests later with the UI or whatever.
 - **Checks Dates**: Makes sure requests fit between vessel open and close times—rejects the rest.
-- **Emails**: Sends custom emails depending on the terminal (JICT, KOJA, MAL) with a table and Excel.
+- **Emails**: Sends custom emails depending on the terminal with a table and Excel.
 - **Triggers**: Sets itself up to run based on closing times from the "Vessel" sheet.
 - **UI**: Pick a vessel, pick a sending number, hit send—done.
 
@@ -55,7 +55,7 @@ function sendExtendClosingEmail(vessel, terminal, newRequests, sendingNumber) {
 ```
 
 ## Why Bother?
-If you’re stuck dealing with late containers (like at PT Ocean Network Express Indonesia or wherever), this saves you from typing emails all day. It catches stuff on time, cuts the mistakes, and makes terminals happy with nice emails and files. Less hassle, more done.
+If you’re stuck dealing with late containers, this saves you from typing emails all day. It catches stuff on time, cuts the mistakes, and makes terminals happy with nice emails and files. Less hassle, more done.
 
 ## How to Use It
 - **Sheets**: Need `Extend Data` (requests) and `Vessel` (schedules—name, opening, closing, terminal).
